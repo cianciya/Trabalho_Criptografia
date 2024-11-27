@@ -1,0 +1,84 @@
+﻿Algoritmos de Criptografia
+Um algoritmo de criptografia representa uma fórmula matemática que sistematicamente converte dados em ciphertexts. 
+Essa tecnologia também permite que os dados criptografados sejam revertidos em textos legíveis. 
+
+
+Criptografia DES 
+
+Criado na IBM, o Data Encryption Standard (DES) foi um dos primeiros algoritmos criptográficos desenvolvidos. 
+Ele é um algoritmo de tipo chave simétrica e era considerado o padrão federal de criptografia de dados dos Estados Unidos até 1999.
+
+Devido a algumas preocupações com a segurança do método, novos algoritmos criptográficos modernos substituíram o já ultrapassado Data Encryption Standard. 
+Isso porque suas chaves de 56 bits são muito curtas e, portanto, fáceis de serem decifradas por um computador moderno.
+
+Antes de se tornar obsoleto, o DES era tipicamente utilizado para proteger transações financeiras eletrônicas. 
+Seu uso na atualidade inclui treinamentos em criptografia e projetos de pesquisa. 
+
+Criptografia 3DES 
+
+O algoritmo criptográfico 3DES (Triple Data Encryption Standard) é o sucessor do algoritmo DES original. 
+Seu propósito inicial era de resolver os principais problemas do DES. Mais especificamente, a questão do tamanho pequeno da chave secreta (56 bits). 
+
+Assim como seu antecessor, o 3DES é um algoritmo criptográfico simétrico, e o tamanho das suas chaves é de 64 bits. 
+Ele também foi desenvolvido a partir da mesma estrutura de códigos da Cifra Feistel.
+
+O algoritmo simétrico 3DES utiliza um método de criptografia triplo, aplicando três vezes o algoritmo DES em cada bloco de dados. 
+É assim que a chave do 3DES se torna mais longa e, portanto, significativamente mais difícil de decifrar. 
+
+Criptografia AES 
+
+O padrão de criptografia avançado — Advanced Encryption Standard (AES) — é um algoritmo simétrico mais recente. 
+Ele substituiu o DES como o padrão criptográfico nacional dos EUA a partir da aprovação feita pelo Instituto Nacional de Padrões e Tecnologia, o 
+NIST (National Institute of Standards and Technology).
+
+A principal vantagem do AES sobre o DES é o tamanho das chaves geradas, cujo comprimento pode ser de até 256 bits, tornando-as mais difíceis de decifrar 
+por usuários não autorizados. Além disso, o algoritmo de criptografia AES é mais rápido, já que é matematicamente mais eficiente. 
+
+Entre os algoritmos criptográficos simétricos, o AES é atualmente o mais popular. Seus principais usos incluem a segurança de redes Wi-Fi e a 
+proteção de informações em plataformas de armazenamento de dados e em aplicativos móveis.
+
+Criptografia RSA 
+
+O Rivest-Shamir-Adleman (RSA) é um dos primeiros algoritmos criptográficos assimétricos. Apesar de ser antigo, ele se mantém como uma opção popular, 
+já que oferece um alto nível de segurança. 
+
+O RSA utiliza o método matemático de Fatoração Primária — uma espécie de decomposição em fatores primos — para gerar uma longa sequência de números a 
+partir de combinações menores. Assim, a partir de longas strings, os cibercriminosos precisariam determinar quais são as pequenas strings de números primos 
+para então descobrir a chave secreta.
+
+O algoritmo criptográfico RSA utiliza tamanhos de chave significativamente maiores do que outras soluções de algoritmos de criptografia de chave pública. 
+O RSA suporta chaves assimétricas de até 4096 bits, que são quase impossíveis de decifrar, mesmo com um computador moderno.
+
+Esse algoritmo de chave pública costuma ser utilizado para proteger aplicações web, mensagens de email e blockchains de criptomoedas. Os certificados SSL e TLS 
+também fazem uso do algoritmo RSA para executar seus processos de criptografia assimétrica.
+
+Criptografia Twofish 
+
+O Twofish é um algoritmo de criptografia simétrico que suporta chaves de comprimento de até 256 bits. Ele foi inicialmente desenvolvido para substituir o DES, 
+mas seu desempenho com chaves de 128 bits ficou aquém do algoritmo de criptografia AES.
+
+Apesar de um pouco mais lento, este algoritmo oferece um nível de segurança similar ao do AES. A principal vantagem do Twofish, entretanto, está na sua flexibilidade, 
+já que  esse algoritmo adequado pode ser utilizado numa ampla gama de casos e aplicativos. 
+
+O Twofish possibilita a compensação de desempenho de acordo com a relevância de diversos parâmetros, como velocidade de encriptação e capacidades de hardware. 
+Sendo assim, isso faz com que o algoritmo criptográfico Twofish seja a solução ideal para aplicações com recursos limitados de armazenamento e memória RAM.
+
+Apesar do Twofish não ser tão amplamente utilizado quanto o AES, alguns apps populares usam esse método de criptografia:
+
+PGP (Pretty Good Privacy) – programa de criptografia que realiza autenticação, codificação e decodificação de emails.
+KeePass – ferramenta do tipo gerenciador de senhas para armazenamento e criptografia. 
+TrueCrypt – software de criptografia de disco para programas freeware, protegendo seus dados.
+Peazip – criador e extrator de arquivos em ficheiros. Programa de código aberto.
+Criptografia RC4 
+
+O Rivest Cipher (RC4) é um algoritmo de criptografia simétrico que utiliza um sistema de cifras de fluxo. Trata-se de um método de codificação que processa 
+os dados um bite por vez. 
+
+Essa encriptação simétrica é conhecida por sua simplicidade e bom desempenho. Os casos em que sua utilização é mais comum incluem certificados SSL e TLS, 
+protocolos de criptografia para Wi-Fi e proteção de navegadores, como o Microsoft Edge.
+
+De todo modo, o RC4 não é mais tão utilizado devido ao seu baixo nível de segurança. Apesar desse algoritmo criptográfico suportar chaves secretas de até 2048 bits, 
+diversos estudos identificaram vulnerabilidades de segurança significativas no RC4.
+
+Múltiplas variantes de criptografia foram desenvolvidas para resolver essas fragilidades, como os algoritmos Spritz, RC4A, RC4A+ e o 
+VMPC (Variably Modified Permutation Composition).

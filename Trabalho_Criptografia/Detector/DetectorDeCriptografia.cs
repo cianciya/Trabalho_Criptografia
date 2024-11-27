@@ -14,7 +14,7 @@ namespace Trabalho_Criptografia.DetectorDeCriptografia
             "COUNTRY", "JOURNEY", "TRAVEL", "VACATION"
         };
 
-
+        /// <summary>
         /// Verifica se o texto foi criptografado com a Cifra de César.
         /// Testa deslocamentos de 1 a 25 para tentar descriptografar.
         /// <param name="texto">O texto cifrado.</param>
