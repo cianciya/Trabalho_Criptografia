@@ -10,7 +10,7 @@
               C = (P + o) mod 26
               Onde:
               - C: Índice da letra cifrada. (retorno)
-              - P: Índice da letra original.
+              - P: Índice da letra original. (caracter - baseLetra)
               - o: Deslocamento.
               - mod: Garante que o índice "circulará" dentro do alfabeto.
               - C = (P + o) mod 26
