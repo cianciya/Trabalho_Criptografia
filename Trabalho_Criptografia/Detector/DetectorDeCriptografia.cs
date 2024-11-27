@@ -10,8 +10,8 @@ namespace Trabalho_Criptografia.DetectorDeCriptografia
         private static readonly HashSet<string> PalavrasValidas = new()
         {
             // Adicione palavras comuns para validação (podem ser ajustadas conforme o idioma ou o contexto).
-            "A", "AS", "EU", "ELA", "ELE", "ESTÁ",
-            "COUNTRY", "JOURNEY", "TRAVEL", "VACATION"
+            "a", "e", "eu", "ela", "ele", "i",
+            "o", "u"
         };
 
         /// <summary>
@@ -72,6 +72,8 @@ namespace Trabalho_Criptografia.DetectorDeCriptografia
         {
             texto = NormalizarTexto(texto);
 
+            bool encontrou = false; // Flag para indicar se algum texto válido foi encontrado.
+
             foreach (var chave in PalavrasValidas) // Testa cada palavra válida como chave.
             {
                 string tentativa = DescriptografarVigenere(texto, chave);
@@ -81,12 +83,17 @@ namespace Trabalho_Criptografia.DetectorDeCriptografia
                 if (ContemPalavraValida(tentativa))
                 {
                     Console.WriteLine($"Texto decifrado com chave '{chave}': {tentativa}");
-                    return;
+                    encontrou = true; // Marca que ao menos uma correspondência foi encontrada.
                 }
             }
 
-            Console.WriteLine("Não foi possível decifrar o texto com força bruta.");
+            // Verifica se nenhuma correspondência foi encontrada após testar todas as chaves.
+            if (!encontrou)
+            {
+                Console.WriteLine("Nenhuma correspondência válida foi encontrada.");
+            }
         }
+
 
 
         /// Descriptografa um texto cifrado com a Cifra de Vigenère usando uma chave fornecida.
